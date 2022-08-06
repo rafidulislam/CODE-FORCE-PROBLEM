@@ -1,0 +1,35 @@
+
+# Python program to convert a list to string
+    
+# Function to convert  
+def listToString(s): 
+    
+    # initialize an empty string
+    str1 = "" 
+    
+    # traverse in the string  
+    for ele in s: 
+        str1 += ele  
+    
+    # return string  
+    return str1 
+n,t=input().split(" ")
+t=int(t)
+n=int(n)
+#t=int(input())
+s=input()
+l=[]
+for char in s:
+  l.append(char)
+
+for j in range(t):
+  i=0
+  while(i<len(l)-1):
+    if (l[i] == 'B' and l[i+1] == 'G'):
+      l[i]='G'
+      l[i+1] = 'B'
+      i+=1
+      
+    i+=1
+j=listToString(l)
+print(j)
